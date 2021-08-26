@@ -53,7 +53,7 @@ class Queen:
         self.coordinate = coordinate
         self.colour = colour
         self.player = player
-        self.type = ""
+        self.type = "Queen"
 
     def return_data(self):
         return {
@@ -71,13 +71,13 @@ class Bishop:
         self.player = player
         self.type = "Bishop"
 
-        def return_data(self):
-            return {
-                "co ordinate": self.coordinate,
-                "colour": self.colour,
-                "player": self.player,
-                "type": self.type
-            }
+    def return_data(self):
+        return {
+            "co ordinate": self.coordinate,
+            "colour": self.colour,
+            "player": self.player,
+            "type": self.type
+        }
 
 
 class Rook:
